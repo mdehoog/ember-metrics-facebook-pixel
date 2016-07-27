@@ -34,9 +34,9 @@ export default BaseAdapter.extend({
     const props = without(options, 'event');
 
     if (Object.keys(props).length > 0) {
-      window.fbq('track', event, props);
+      window.fbq('trackCustom', event, props);
     } else {
-      window.fbq('track', event);
+      window.fbq('trackCustom', event);
     }
   },
 
